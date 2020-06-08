@@ -24,6 +24,7 @@ h1,h2{
   background-color: #9122ff;
   width: 1200px;
   height: 600px;
+  align-items: center;
 }
 .portafolio {
   background-color: #ffd233;
@@ -52,20 +53,26 @@ h1,h2{
 
 .container-skill{
   
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 500px;
+  align-content: center;
+  align-items: center;
   
 }
 .html{
-  position: relative;
+  
   top: 120px;
   left: 100px;
   width: 250px;
   height: 100px;
   
   
+  
 }
 .css{
-  position: relative;
+  
   top: 0px;
   left: 400px;
   width: 250px;
@@ -73,7 +80,7 @@ h1,h2{
   
 }
 .javascript{
-  position: relative;
+  
   top: -50px;
   left: 100px;
   width: 250px;
@@ -81,7 +88,7 @@ h1,h2{
   
 }
 .vue{
-  position: relative;
+  
   bottom: 168px;
   left: 400px;
   width: 250px;
@@ -89,7 +96,7 @@ h1,h2{
   
 }
 .flexbox{
-  position: relative;
+  
   bottom: 200px;
   left: 100px;
   width: 250px;
@@ -97,7 +104,7 @@ h1,h2{
   
 }
 .cssg{
-  position: relative;
+  
   bottom: 319px;
   left: 400px;
   width: 200px;
@@ -112,9 +119,12 @@ h1,h2{
   background-color: white;
   border: 2px solid white;
   border-radius: 10px;
+  
 }
 .barra-celeste {
-  position: absolute;
+  position: relative;
+  top: -2px;
+  left: -2px;
   height: 10px;
   width: 100px;
   background-color: #57eff9;
