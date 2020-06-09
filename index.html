@@ -2,122 +2,68 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/main.css" />
-  <title>Mi portafolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
 </head>
 
 <body>
-  <main>
-    <!--Seccion del banner-->
-    <section class="banner">
-      <figure>
-        <h1>
-          Pachaqtec
-        </h1>
-        <img class="deportista" src="images/banner.png" alt="Imagen de un deportista" />
-        <h2>
-          Hola, mi nombre es Sebastian Yabiku
-        </h2>
-      </figure>
-    </section>
-    <!--Seccion de "Sobre mi"-->
-    <section class="about">
-      <h2>Sobre mi</h2>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam
-          commodo, arcu gravida erat quam donec convallis. Gravida arcu,
-          suspendisse semper mauris tristique tortor. Eu, malesuada elit
-          feugiat laoreet malesuada vitae. zz enim habitasse malesuada lacus,
-          euismod pharetra habitasse. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Quis diam commodo, arcu gravida erat quam donec
-          convallis. Gravida arcu, suspendisse semper mauris tristique tortor.
-          Eu, malesuada elit feugiat laoreet malesuada vitae. zz enim
-          habitasse malesuada lacus, euismod pharetra habitasse. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Quis diam commodo, arcu
-          gravida erat quam donec convallis. Gravida arcu, suspendisse semper
-          mauris tristique tortor. Eu, malesuada elit feugiat laoreet
-          malesuada vitae. zz enim habitasse malesuada lacus, euismod pharetra
-          habitasse.
-        </p>
-        <button class="boton">Boton CV</button>
-      </div>
-    </section>
-    <!--Seccion Mis skills-->
-    <section class="skills">
-      <h2>Mis Skill</h2>
+    <form action="#" method="GET">
+        <label for="name">
+            <input type="text" name="name" id="name" placeholder="Nombres">
+        </label>
+        <label for="lastname">
+            <input type="text" name="lastname" id="lastname" placeholder="Apellidos">
+        </label>
+        <br><br>
+        <label for="age">
+            <input type="number" name="age" id="age" placeholder="Edad">
+        </label>
+        <label for="district">
+            Districto:
+            <select  name="district">
+                <option value="1">Lima</option>
+                <option value="2">San martin de porres</option>
+                <option value="3">La victoria</option>
+                <option value="4">San juan de lurigancho</option>
+            </select>
+        </label>
+        <br><br>
+        <label for="phone">
+            <input type="tel" name="phone" id="phone" placeholder="Numero de Telefono">
+        </label>
+        <label for="email">
+            <input type="email" name="email" id="email" placeholder="Correo Electronico">
+        </label>
+        <br><br>
+        <label for="sex">
+            <label for="female">Mujer:</label>
+            <input type="radio" name="sex" id="female" value="female" checked>
+            
+            <label for="male">Hombre:</label>
+            <input type="radio" name="sex" id="male" value="male">
+        </label>
+        <br><br>
+        <label for="artist">
+            Artista Favorito:
+            <input type="text" name="artist" id="artist">
+        </label>
+        <br><br>
+        <label for="pet">
+            Mascota:
+            <label for="yes">Si</label>
+            <input type="radio" name="pet" id="yes" value="si" checked>
+            
+            <label for="no">No</label>
+            <input type="radio" name="pet" id="no" value="no">
+        </label>
+        <br><br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Comentario"></textarea>
+        <br><br>
+        <button>Enviar</button>
+        <input type="reset" value="Reset">
+    </form>
 
-      <div class="container-skill">
-        <div class="html">
-          <h3>HTML</h3>
-          <div class="barra-blanca"><div class="barra-celeste"></div></div>
-          
-        </div>
-        <div class="css">
-          <h3>CSS</h3>
-          <div class="barra-blanca"><div class="barra-celeste"></div></div>
-          
-        </div>
-        <div class="javascript">
-          <h3>JavaScript</h3>
-          <div class="barra-blanca"><div class="barra-celeste"></div></div>
-          
-        </div>
-        <div class="vue">
-          <h3>Vue</h3>
-          <div class="barra-blanca"><div class="barra-celeste"></div></div>
-          
-        </div>
-        <div class="flexbox">
-          <h3>Flexbox</h3>
-          <div class="barra-blanca"><div class="barra-celeste"></div></div>
-          
-        </div>
-        <div class="cssg">
-          <h3>CSS Grid</h3>
-          <div class="barra-blanca"><div class="barra-celeste"></div></div>
-          
-        </div>
-      </div>
-    </section>
-    <!--Seccion Portafolio-->
-    <section class="portafolio">
-      <h2>Portafolio</h2>
-      <figure>
-        <img src="images/image-7.png" alt="" />
-      </figure>
-      <figure><img src="images/image-6.png" alt="" /></figure>
-      <figure><img src="images/image-5.png" alt="" /></figure>
-      <figure><img src="images/image-4.png" alt="" /></figure>
-      <figure><img src="images/image-3.png" alt="" /></figure>
-      <figure><img src="images/image-2.png" alt="" /></figure>
-      <figure><img src="images/image-1.png" alt="" /></figure>
-      <figure><img src="images/image.png" alt="" /></figure>
-    </section>
-    <!--Seccion del Clientes-->
-    <section class="clientes">
-      <h2>Clientes</h2>
-      <figure>
-        <img src="images/cliente1.png" alt="" />
-      </figure>
-      <figure><img src="images/cliente2.png" alt="" /></figure>
-      <figure><img src="images/cliente3.png" alt="" /></figure>
-      <figure><img src="images/cliente4.png" alt="" /></figure>
-    </section>
-    <!--Seccion del Contacto-->
-    <section class="contacto">
-      <h2>Contacto</h2>
-      <form action="">
-        <input type="text" placeholder="Nombre" />
-        <input type="text" placeholder="Apellido" /> <br />
-        <input type="email" placeholder="Email" />
-        <input type="tel" placeholder="Telefono" /> <br />
-        <textarea name="" id="" cols="30" rows="10" placeholder="Descripcion"></textarea>
-      </form>
-    </section>
-  </main>
 </body>
 
 </html>
